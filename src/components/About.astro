@@ -1,0 +1,15 @@
+<section id="about" class="bg-light py-20">
+  <div class="mx-auto max-w-4xl text-center">
+    <h2 class="text-3xl font-semibold">Hi! We’re a new company</h2>
+    <p class="mt-2 text-gray-600">Our mission is to make advanced forecasting as simple as drag-and-drop.</p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-4">
+      {['Nacim Belkhir','Gianni Franchi','Peter Harfouche','Joffrey Ma'].map(name => (
+        <div class="rounded-lg bg-white p-6 shadow">
+          <div class="mb-4 h-20 w-20 rounded-full bg-gray-200 mx-auto" />
+          <p class="font-medium">{name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

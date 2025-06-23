@@ -1,1 +1,21 @@
-@import "tailwindcss";
+/* src/styles/global.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=League+Spartan:wght@900&display=swap");
+@import "tailwindcss";            /* brings in the framework */
+
+/* --- your design system ------------------------------- */
+@theme {
+  /* fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-logo:  "League Spartan", sans-serif;
+
+  /* colours used in the Astro components we wrote */
+  --color-brand:   #101827;   /* dark text */
+  --color-primary: #832cf1;   /* brand violet */
+  --color-light:   #F8FAFC;   /* pale row background */
+}
+/* -------------------------------------------------------
+   Tiny utility so you can write `class="font-logo"`
+------------------------------------------------------- */
+@layer utilities {
+  .font-logo { font-family: var(--font-logo); }
+}

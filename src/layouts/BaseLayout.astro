@@ -1,0 +1,25 @@
+---
+import '../styles/global.css' 
+const { title = 'Janvier AI' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content="Custom no-code AI for time-series" />
+  </head>
+
+  <body class="font-sans text-brand antialiased">
+    <!-- named slots -->
+    <slot name="nav" />
+
+    <!-- default slot (page content) -->
+    <main>
+      <slot />
+    </main>
+
+    <slot name="footer" />
+  </body>
+</html>
